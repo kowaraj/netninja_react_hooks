@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 
-const AddSongForm = () => {
+const AddSongForm = ({ addSongHandler }) => {
     const [title, setTitle ] = useState("");
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(title);  
+        addSongHandler(title);
     }
     return ( 
         <form onSubmit={handleSubmit}>

@@ -8,9 +8,9 @@ const SongList = () => {
         {title: "song two", id: uuid()},
         {title: "song three", id: uuid()},
     ]);
-    const addSong = () => {
+    const addSong = (title) => {
         setSongs(
-            [...songs, {title: "New song", id: uuid()} ]
+            [...songs, {title: title, id: uuid()} ]
         );
     };
     return (  
@@ -20,7 +20,7 @@ const SongList = () => {
                     return ( <li key={song.id}> {song.title} </li>)
                 })
             }</ul>
-            <AddSongForm />
+            <AddSongForm addSongHandler={addSong}/>
         </div>
     );
 }
