@@ -15,7 +15,7 @@ const SongList = () => {
     };
     useEffect(() => {
         console.log("(Re-)rendering SongList component", songs )
-    });
+    }, [songs]);
     const [age, setAge] = useState(20);
 
     return (  
