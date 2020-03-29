@@ -5,6 +5,7 @@ const AddSongForm = ({ addSongHandler }) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         addSongHandler(title);
+        setTitle('');
     }
     return ( 
         <form onSubmit={handleSubmit}>
