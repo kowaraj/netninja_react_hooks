@@ -10,7 +10,7 @@ const SongList = () => {
     ]);
     const addSong = (title) => {
         setSongs(
-            [...songs, {title: title, id: uuid()} ]
+            [...songs, {title, id: uuid()} ]
         );
     };
     return (  
