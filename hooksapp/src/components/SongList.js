@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import uuid from 'uuid/v1';
 import AddSongForm from './AddSongForm';
 
@@ -13,6 +13,10 @@ const SongList = () => {
             [...songs, {title, id: uuid()} ]
         );
     };
+    useEffect(() => {
+        console.log("(Re-)rendering SongList component", songs )
+    });
+
     return (  
         <div className='song-list'>
             <ul>{
