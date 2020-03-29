@@ -1,6 +1,9 @@
 import React, { Component, useContext } from 'react';
 import { ThemeContext } from '../contexts/ThemeContext';
 
+to fix all this continue on: React Context & Hooks Tutorial #13 - Hooks with Context
+https://www.youtube.com/watch?v=7LIGIN6_R_s&list=PL4cUxeGkcC9hNokByJilPg5g9m2APUePI&index=13
+
 class BookList-OLD extends Component {
     static contextType = ThemeContext; // <---- cannot be used inside a Functional Component
     render() { 
