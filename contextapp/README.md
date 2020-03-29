@@ -20,5 +20,5 @@ class Navbar extends Component {
 
 | 1. | 2. |
 |----|----|
-|    | + can consume more than 1 Provider        |
+|    | + can consume more than 1 Context        |
 |    | + also works with `functional` components |
