@@ -19,7 +19,7 @@ class Navbar extends Component {
                         </ul>
                     </nav>
                 )
-            }} </ThemeContext.Consumer>
+            }}</ThemeContext.Consumer>
         )
     }
 }
