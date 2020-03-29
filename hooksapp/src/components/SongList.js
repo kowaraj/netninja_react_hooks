@@ -16,6 +16,7 @@ const SongList = () => {
     useEffect(() => {
         console.log("(Re-)rendering SongList component", songs )
     });
+    const [age, setAge] = useState(20);
 
     return (  
         <div className='song-list'>
@@ -25,6 +26,7 @@ const SongList = () => {
                 })
             }</ul>
             <AddSongForm addSongHandler={addSong}/>
+            <button onClick={(e)=> setAge(age+1) }>Age +1, {age}</button>
         </div>
     );
 }
